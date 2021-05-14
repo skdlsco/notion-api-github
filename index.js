@@ -127,7 +127,7 @@ async function syncPullsWithDatabase(){
         //This issue already exists in the database so we want to update the page
         {
             await notion.request({
-                path:'pages/'+pullsInDatabase[issue_number].page_id,
+                path:'pages/'+pullsInDatabase[pull_number].page_id,
                 method:'patch', 
                 body:{
                     "properties": properties
